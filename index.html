@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arta Kalanlar - StoryMaps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <!-- FİLTRE BAŞLANGIÇ -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: none;">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+    <!-- FİLTRE BİTTİ -->
+
+    <header>
+        <div class="header-container">
+            <div class="title-section">
+                <h1>Arta Kalanlar</h1>
+                <p class="subtitle">Türkiye'de Tehlike Altındaki Memeliler</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="karamemelileri.html">Kara Memelileri</a></li>
+                    <li><a href="denizmemelileri.html">Deniz Memelileri</a></li>
+                    <li><a href="ucanmemeliler.html">Uçan Memeliler</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <p class="intro-text">
+                Bu web sitesi, "Arta Kalanlar: Türkiye'de tehlike altındaki memeli türleri " projesi kapsamında, StoryMaps içeriği olarak hazırlanmıştır.
+            </p>
+
+            <div class="video-gallery">
+                
+                <div class="video-card">
+                    <img src="images/okyanus-4k.jpg" alt="Mavi Krallık Küçük Resim">
+                    <h3>Mavi Krallık: Okyanusların Devleri ve Zeki Avcıları</h3>
+                    <p>
+                        Bu video, okyanus belgeseli tadında; mavi balina, kambur balina, orka (katil balina), şişe burunlu yunus, deniz samuru, mors, foklar, büyük beyaz köpekbalığı, balina köpekbalığı, çekiç başlı köpekbalığı, manta vatozu, denizaslanı, ahtapot, ay denizanası, deniz yıldızı ve yeşil deniz kaplumbağası gibi türlerin yaşamını, davranışlarını ve okyanus ekosistemindeki rollerini anlatır. Amaç, bu büyüleyici canlıların zengin dünyasını anlaşılır ve merak uyandırıcı bir dille sunmak.
+                    </p>
+                    <!-- YENİ BLOB BUTON -->
+                    <button class="blob-btn expand-btn" data-video-src="https://www.youtube.com/embed/thPKcFXF8PA">
+                        Videoyu İzle
+                        <span class="blob-btn__inner">
+                            <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                            </span>
+                        </span>
+                    </button>
+                    <!-- YENİ BUTON BİTTİ -->
+                </div>
+
+                <div class="video-card">
+                    <img src="images/vahşi.jpg" alt="Video 2 Küçük Resim">
+                    <h3>Türkiye’nin Vahşi Kedileri</h3>
+                    <p>Türkiye sınırları içinde yaşayan Vaşak, Karakulak, Saz Kedisi, Yaban Kedisi, ve Anadolu Parsı gibi vahşi kedi türlerinden. Yaşam alanlarından Fiziksel ve davranışsal özelliklerinden bahsediliyor. Herkese İyi Seyirler.</p>
+                    <!-- YENİ BLOB BUTON -->
+                    <button class="blob-btn expand-btn" data-video-src="https://www.youtube.com/embed/kclTYExWuRs">
+                        Videoyu İzle
+                        <span class="blob-btn__inner">
+                            <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                            </span>
+                        </span>
+                    </button>
+                    <!-- YENİ BUTON BİTTİ -->
+                </div>
+
+
+            </div>
+            <p class="action-text">
+                Detaylı StoryMaps içeriğine ulaşmak için lütfen butonu kullanın.
+            </p>
+<ul class="storymaps-nav">
+    <li>
+        <a href="https://arcg.is/0H9KfT0" target="_blank">
+            <img src="images/storymaps.png" alt="Storymaps Logosu" class="storymaps-logo">
+            <span class="title">Storymaps</span>
+        </a>
+    </li>
+</ul>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Mehmet Ali Yanmaz 2025</p>
+    </footer>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content"> <span class="close-btn">&times;</span>
+            <span class="fullscreen-btn" title="Tam Ekran">&#x2610;</span>
+            
+            <div class="video-container">
+                <iframe id="youtubePlayer" width="853" height="480" src="" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen> </iframe>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
