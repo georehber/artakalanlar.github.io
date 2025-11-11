@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deniz Memelileri - Arta Kalanlar</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- FİLTRE BAŞLANGIÇ -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: none;">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+    <!-- FİLTRE BİTTİ -->    
+
+    <header>
+        <div class="header-container">
+            <div class="title-section">
+                <h1>Arta Kalanlar</h1>
+                <p class="subtitle">Türkiye'de Tehlike Altındaki Memeliler</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="karamemelileri.html">Kara Memelileri</a></li>
+                    <li><a href="denizmemelileri.html">Deniz Memelileri</a></li>
+                    <li><a href="ucanmemeliler.html">Uçan Memeliler</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            
+            <h2 class="page-title">Deniz Memelileri</h2>
+            
+            <p class="intro-text">
+                Türkiye sularında yaşayan ve nesli tehlike altında bulunan deniz memelisi türleriyle ilgili bazı videoları burada bulabilirsiniz.
+            </p>
+
+            <div class="video-gallery">
+                
+                <div class="video-card">
+                    <img src="images/fok.jpg" alt="Tür Resmi">
+                    <h3>Akdeniz Foku</h3>
+                    <p>Akdeniz foku (Monachus monachus), fokgiller (Phocidae) familyasından yeryüzünde sadece doğu Akdeniz sahilleri ile Batı Afrika'nın bir tek sahilinde yaşayan fok türü. Üzerinde yapılaşma olmayan, insanların kolay ulaşamadığı ya da insan etkinliklerinden uzak kalmış yerleri, tercihen üreme veya barınma işlevleri gören kıyı mağara ve kovuklarına sahip; sessiz ve tenha kayalık sahilleri yaşama alanı olarak seçen Akdeniz fokları, bu alanların bozulmasından doğrudan etkilenmektedir. </p>
+                    <!-- YENİ BLOB BUTON -->
+                    <button class="blob-btn expand-btn" data-video-src="https://www.youtube.com/embed/qeC_DTWi-JE">
+                        Videoyu İzle
+                        <span class="blob-btn__inner">
+                            <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                            </span>
+                        </span>
+                    </button>
+                    <!-- YENİ BUTON BİTTİ -->
+                </div>
+
+                <div class="video-card">
+                    <img src="images/fok.jpg" alt="Tür resmi 2">
+                    <h3>Akdeniz Foku - 2</h3>
+                    <p>İnsanların kolay ulaşamadığı yerleri veya tenha kayalık sahilleri seçen Akdeniz fokunun, aradığı huzuru bulduğu yerlerden biri de Anamur kıyılarıdır. Nesli tükenme tehlikesi altındaki bu canlı türü, başta Türkiye olmak üzere dünyada sadece dört ülkede görülüyor. Fokların boyu, iki ila üç metre arasında olup, üç yüz kilogram ağırlığa ulaşabiliyorlar.</p>
+                    <!-- YENİ BLOB BUTON -->
+                    <button class="blob-btn expand-btn" data-video-src="https://www.youtube.com/embed/7ESherelyhY">
+                        Videoyu İzle
+                        <span class="blob-btn__inner">
+                            <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                            </span>
+                        </span>
+                    </button>
+                    <!-- YENİ BUTON BİTTİ -->
+                </div>
+
+                <div class="video-card">
+                    <img src="images/fok.jpg" alt="Tür resmi 3">
+                    <h3>Akdeniz Foku - 3</h3>
+                    <p>Akdeniz foku için Tehdit Altındaki Coğrafyalar Programı kapsamında yürüttüğümüz çalışmaları ekibimizden Ezgi Saydam anlatıyor.</p>
+                    <!-- YENİ BLOB BUTON -->
+                    <button class="blob-btn expand-btn" data-video-src="https://www.youtube.com/embed/1ub6Hk6RJQs">
+                        Videoyu İzle
+                        <span class="blob-btn__inner">
+                            <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                            </span>
+                        </span>
+                    </button>
+                    <!-- YENİ BUTON BİTTİ -->
+                </div>
+
+
+                <div class="video-card">
+                    <img src="images/şişeburun yunus.jpg" alt="Tür resmi 4">
+                    <h3>Şişeburunlu yunus</h3>
+                    <p>Şişe burunlu yunusların dünyası ve iletişimleri. Sesi açın ve söylediklerini dinleyin. Günlük yaşamlarını sürdürürken çıkardıkları ıslıkları, tıkırtıları ve cıvıltıları duyun.</p>
+                    <!-- YENİ BLOB BUTON -->
+                    <button class="blob-btn expand-btn" data-video-src="https://www.youtube.com/embed/41X0hhgyW-k">
+                        Videoyu İzle
+                        <span class="blob-btn__inner">
+                            <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                            </span>
+                        </span>
+                    </button>
+                    <!-- YENİ BUTON BİTTİ -->
+                </div>
+
+
+                <div class="video-card">
+                    <img src="images/tırtak.jpg" alt="Tür resmi 5">
+                    <h3>Tırtak</h3>
+                    <p>Yunuslar… Onlar sadece denizlerde yüzen birer canlı değil. Zekâları, duygusal bağları, empati yetenekleri ve insanla kurdukları iletişim şekliyle, doğanın en gizemli varlıklarından biri. Bu belgeselde: yunusların şaşırtıcı sosyal yapısını, birbirleriyle “konuşma” biçimlerini, insanı kurtaran yunus hikâyelerini, ve bilimin bile tam olarak açıklayamadığı zekâ yapılarını inceliyoruz. yunusların dünyasına derin bir dalış yapmaya hazır mısınız?</p>
+                    <!-- YENİ BLOB BUTON -->
+                    <button class="blob-btn expand-btn" data-video-src="https://www.youtube.com/embed/gRwfW3eI3uU">
+                        Videoyu İzle
+                        <span class="blob-btn__inner">
+                            <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                            </span>
+                        </span>
+                    </button>
+                    <!-- YENİ BUTON BİTTİ -->
+                </div>
+
+
+                <div class="video-card">
+                    <img src="images/ispermeçet.jpg" alt="Tür resmi 5">
+                    <h3>İspermeçet Balinası</h3>
+                    <p>Bu videoda öncelikle alt yazıları açınız. Crozet Adaları çevresinde, ortamlarında hızlı değişikliklerle karşı karşıya kalan bir Sperm Balinası ailesinin inanılmaz macerası burada. Fırtınalı yüzeyden uçurumun sonsuz karanlığına kadar, bu derin deniz dalgıçlarının birkaç nesli, insanlarla ve onların "oyuncaklarıyla" karşılaşır: dünün zıpkınları ve bugünün oltaları. Bir zamanlar balina avcılığının kurbanı olan ve şimdi balık çalmakla suçlanan bir ispermeçet balinası, özel hayatını bizimle paylaşıyor. Ve ne bir daldırma! Sırasıyla gizemli sonarını, orcas gibi rakiplerini ve ayrıca komşularının garip dünyasını - derin deniz canavarlarını - keşfediyoruz. Bunların arasında bir vahiy var: Doğal ortamında şimdiye kadar çekilmiş en büyük kalamar, neredeyse 15 fit uzunluğunda. Gelin ve Crozet uçurumunun derinliklerini keşfedin...</p>
+                    <!-- YENİ BLOB BUTON -->
+                    <button class="blob-btn expand-btn" data-video-src="https://www.youtube.com/embed/DT-TDegf-Xo">
+                        Videoyu İzle
+                        <span class="blob-btn__inner">
+                            <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                            </span>
+                        </span>
+                    </button>
+                    <!-- YENİ BUTON BİTTİ -->
+                </div>
+
+
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Mehmet Ali Yanmaz 2025</p>
+    </footer>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <span class="fullscreen-btn" title="Tam Ekran">&#x2610;</span>
+            <div class="video-container">
+                <iframe id="youtubePlayer" width="853" height="480" src="" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen> </iframe>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
